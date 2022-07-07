@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geovani-Contato</title>
     <link rel="stylesheet" href="/css/site.css">
+    <style>
+        #enviarlimpar {
+            background-color: darkgray;
+            border: 1px;
+            border-radius: 4px;
+            padding: 4px;
+        }
+
+        html{
+            background-image: url(/img/canis_mayoris_by_keepwalking07\ \(1\).jpg);
+            background-size:200%;
+            background-position: right;
+        }
+
+        body{
+
+            background-color: transparent;
+        }
+
+        nav ul{
+            background-color: transparent;
+
+        }
+
+        nav a{
+            color: gold;
+        }
+    </style>
 </head>
+
 <body>
-    
+
     <header>
         <img src="/img/contact.png" alt="">
         <h1 align="center">Contato</h1>
@@ -24,12 +54,32 @@
 
     <main>
         <h2>Entre em contato comigo!</h2>
+        <form action="mailto: rumblycactus3@gmail.com?subject=Contato via Site Pessoal" method="post"
+            enctype="text/plain">
 
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Insira seu Nome" required>
+            <br>
+            <label for="telefone">Telefone: </label>
+            <input type="tel" name="telefone" id="telefone" placeholder="Insira seu Telefone" required>
+            <br>
+            <label for="assunto">Assunto: </label>
+            <textarea name="assunto" id="assunto" cols="20" rows="1"></textarea>
+            <br>
+            <input type="reset" value="Resetar" id="enviarlimpar">
+            <input type="submit" value="Enviar" id="enviarlimpar">
+            <hr>
+            <a target="_blank"
+                href="https://mail.google.com/mail/u/0/?fs=1&to=rumblycactus3@gmail.com&su=Contato+-+via+site+pessoal&body=Olá+Geovani+Tudo+bem?&tf=cm">Prefere
+                Gmail?</a>
+            <hr>
+        </form>
     </main>
 
     <footer>
         <hr>
     </footer>
-    
+
 </body>
+
 </html>

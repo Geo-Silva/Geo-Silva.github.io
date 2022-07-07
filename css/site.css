@@ -56,6 +56,9 @@ header img {
 h1 {
     display: inline;
 }
+footer{
+    text-align: right;
+}
 /*Depois da página carregada, faça isso no footer*/
 footer::after {
     content: "© Copyright 2022 Geo-Silva.github.io";
